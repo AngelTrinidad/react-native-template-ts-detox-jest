@@ -23,7 +23,6 @@ const packageJson = require("./package.json");
 log("Setting up project");
 
 logAndDo("Modifying package.json ", () => {
-  log;
   packageJson.scripts.tsc = "tsc";
   // Remove jest configuration as it will be defined in jest.config.js
   packageJson.jest = undefined;

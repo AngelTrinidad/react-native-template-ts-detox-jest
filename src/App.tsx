@@ -3,7 +3,7 @@
  * https://github.com/facebook/react-native
  *
  * Generated with the TypeScript template
- * https://github.com/solkaz/react-native-template-ts-detox
+ * https://github.com/solkaz/react-native-template-ts-detox-jest
  *
  */
 

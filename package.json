@@ -7,6 +7,11 @@
     "test": "jest",
     "tsc": "tsc"
   },
+  "homepage": "https://github.com/solkaz/react-native-template-ts-detox-jest#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/solkaz/react-native-template-ts-detox-jest"
+  },
   "dependencies": {
     "react": "16.6.1",
     "react-native": "0.57.5"
