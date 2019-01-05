@@ -1,8 +1,6 @@
 const { unlinkSync, writeFileSync } = require("fs");
 const { join } = require("path");
 const { format } = require("util");
-const { log } = console;
-const print = process.stdout.write;
 
 const deleteFile = (file) => unlinkSync(join(__dirname, file));
 
@@ -10,9 +8,9 @@ const writeJsonToFile = (file, data) =>
   writeFileSync(join(__dirname, file), JSON.stringify(data, null, 2));
 
 const logAndDo = (message, action) => {
-  print(`${message}... `);
+  process.stdout.write(`${message}... `);
   action();
-  print("Done!\n");
+  process.stdout.write("Done!\n");
 };
 
 const logAndDelete = (file) =>
@@ -20,7 +18,7 @@ const logAndDelete = (file) =>
 
 const packageJson = require("./package.json");
 
-log("Setting up project");
+console.log("Setting up project");
 
 logAndDo("Modifying package.json ", () => {
   packageJson.scripts.tsc = "tsc";
@@ -34,4 +32,4 @@ logAndDelete(".flowconfig");
 logAndDelete("App.js");
 logAndDelete("postInstall.js");
 
-log("Setup completed!");
+console.log("Setup completed!");
