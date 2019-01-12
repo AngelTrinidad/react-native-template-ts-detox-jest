@@ -18,6 +18,16 @@
     "type": "git",
     "url": "https://github.com/solkaz/react-native-template-ts-detox-jest"
   },
+  "files": [
+    "e2e",
+    "src",
+    "devDependencies.json",
+    "index.js",
+    "postInstall.js",
+    "jest.config.js",
+    "tsconfig.json",
+    "tsconfig.jest.json"
+  ],
   "dependencies": {},
   "devDependencies": {}
 }
