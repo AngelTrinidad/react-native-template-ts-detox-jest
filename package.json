@@ -2,29 +2,20 @@
   "name": "react-native-template-ts-detox-jest",
   "version": "0.0.3",
   "license": "MIT",
+  "author": {
+    "email": "jheld135@gmail.com",
+    "name": "Jeff Held",
+    "url": "https://github.com/solkaz"
+  },
   "scripts": {
-    "start": "node node_modules/react-native/local-cli/cli.js start",
-    "test": "jest",
-    "tsc": "tsc"
+    "prepublish": "git clean -df",
+    "postpublish": "git push --tags"
   },
   "homepage": "https://github.com/solkaz/react-native-template-ts-detox-jest#readme",
   "repository": {
     "type": "git",
     "url": "https://github.com/solkaz/react-native-template-ts-detox-jest"
   },
-  "dependencies": {
-    "react": "16.6.1",
-    "react-native": "0.57.5"
-  },
-  "devDependencies": {
-    "@types/jest": "^23.3.9",
-    "@types/react": "^16.7.7",
-    "@types/react-native": "^0.57.13",
-    "@types/react-test-renderer": "^16.0.3",
-    "babel-jest": "23.6.0",
-    "jest": "23.6.0",
-    "metro-react-native-babel-preset": "0.49.2",
-    "react-test-renderer": "16.6.1",
-    "typescript": "^3.1.6"
-  }
+  "dependencies": {},
+  "devDependencies": {}
 }
