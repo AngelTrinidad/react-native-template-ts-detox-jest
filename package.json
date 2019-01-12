@@ -8,6 +8,7 @@
     "url": "https://github.com/solkaz"
   },
   "scripts": {
+    "test": "echo 'test'",
     "prepublish": "git clean -df",
     "postpublish": "git push --tags"
   },
