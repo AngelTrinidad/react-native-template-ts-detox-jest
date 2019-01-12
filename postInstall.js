@@ -25,6 +25,9 @@ logAndDo("Modifying package.json ", () => {
   // Remove jest configuration as it will be defined in jest.config.js
   packageJson.jest = undefined;
 
+  // Remove babel-jest from devDependencies since ts-jest will be used instead
+  packageJson.devDependencies["babel-jest"] = undefined;
+
   writeJsonToFile("package.json", packageJson);
 });
 
@@ -33,3 +36,7 @@ logAndDelete("App.js");
 logAndDelete("postInstall.js");
 
 console.log("Setup completed!");
+console.log(`
+Things you'll want to do afterwards:
+- Use the Legacy build system in XCode
+`);
