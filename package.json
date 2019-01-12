@@ -8,8 +8,8 @@
     "url": "https://github.com/solkaz"
   },
   "scripts": {
-    "test": "react-native init MyApp --template https://github.com/solkaz/react-native-template-ts-detox-jest && node MyApp/postInstall.js",
-    "pretest": "rm -rf MyApp",
+    "test": "./test.sh",
+    "pretest": "rm -rf ../MyApp",
     "prepublish": "git clean -df",
     "postpublish": "git push --tags"
   },
