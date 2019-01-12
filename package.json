@@ -8,7 +8,8 @@
     "url": "https://github.com/solkaz"
   },
   "scripts": {
-    "test": "echo 'test'",
+    "test": "react-native init MyApp && node MyApp/postInstall.js",
+    "pretest": "rm -rf MyApp",
     "prepublish": "git clean -df",
     "postpublish": "git push --tags"
   },
