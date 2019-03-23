@@ -26,7 +26,8 @@
     "postInstall.js",
     "jest.config.js",
     "tsconfig.json",
-    "tsconfig.jest.json"
+    "tsconfig.jest.json",
+    "detox.config.json"
   ],
   "dependencies": {},
   "devDependencies": {}
